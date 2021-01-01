@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "lint:format": "prettier-standard --format",
+    "lint": "prettier-standard",
+    "lint:staged": "prettier-standard --staged"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,8 @@
     "nodemon": "^2.0.6",
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.4.1"
   }
 }
