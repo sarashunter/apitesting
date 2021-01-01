@@ -1,4 +1,4 @@
-/** 
+/**
  * @swagger
  *  components:
  *    schemas:
@@ -19,7 +19,7 @@
  *            description: The date of the record creation.
  *        example:
  *           name: Kiwi
- * tags: 
+ * tags:
  *      name: Fruits
  *      description: API for fruits for swagger testing
  * paths:
@@ -34,16 +34,15 @@
  *                          application/json:
  *                              schema:
  *                                  type: integer
-*/
+ */
 
-        
 const express = require('express')
 const router = express.Router()
 
 const fruits = require('../util/data')
 
 router.get('/fruits', (req, res) => {
-    res.status(200).json(fruits)
+  res.status(200).json(fruits)
 })
 
 module.exports = router
