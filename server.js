@@ -34,7 +34,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:3000/fruits'
+        url: 'http://localhost:3000/'
       }
     ]
   },
