@@ -12,6 +12,7 @@ app.use(
 app.use(bodyParser.json())
 
 app.use('/fruits', require('./routes/fruits'))
+app.use('/testpage', require('./routes/testpage.js'))
 
 const PORT = process.env.PORT || 3000
 
@@ -38,7 +39,7 @@ const options = {
       }
     ]
   },
-  apis: ['./routes/fruits.js']
+  apis: ['./routes/fruits.js', './routes/testpage.js']
 }
 
 const specs = swaggerJsdoc(options)
